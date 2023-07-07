@@ -165,7 +165,7 @@ class KataGTPBot:
         p = self.katago_proc
 
         # Set komi
-        komi = config.get( 'komi', 7.5)
+        komi = config.get( 'komi', 6)
         self.set_komi( komi)
 
         # Reset the game
