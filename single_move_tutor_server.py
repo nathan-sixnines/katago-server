@@ -12,7 +12,8 @@
 from katago_gtp_bot import KataGTPBot
 from get_bot_app import get_bot_app
 
-katago_cmd = './katago gtp -model g170e-b20c256x2-s5303129600-d1228401921.bin.gz -config single_move_tutor.cfg '
+#katago_cmd = './katago gtp -model g170e-b20c256x2-s5303129600-d1228401921.bin.gz -config gtp_ahn_9.cfg '
+katago_cmd = './katago_eigen gtp -model unzip/g170e-b20c256x2-s5303129600-d1228401921/model.bin.gz -config single_move_tutor.cfg'
 katago_gtp_bot = KataGTPBot( katago_cmd.split() )
 
 # Get an app with 'select-move/<botname>' endpoints
